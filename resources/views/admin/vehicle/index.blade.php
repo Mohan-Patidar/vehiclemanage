@@ -71,7 +71,7 @@
                                         <td class="sorting_1">{{$v->efitness}}</td>
                                         <td class="sorting_1"><img src="{{asset('uploads/puc/' . $v->puc) }}" /><a href="{{asset('uploads/puc/' . $v->puc) }}" class="btn btn-outline-warning" download>Download </a></td>
                                         <td class="sorting_1">{{$v->epuc}}</td>
-
+ssgsgsg
 
 
 
