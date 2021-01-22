@@ -41,79 +41,30 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-<<<<<<< Updated upstream
-                                            <label>Select RC Book</label>
-                                            <input type='file'  name="rcbook" accept=".png, .jpg, .jpeg" />
-=======
                                             <label>Vehicle Number</label>
                                             <input type='file' required name="rcbook" accept=".png, .jpg, .jpeg" />
-                                            <label for="file" class="btn-2">Select RC Book</label>
->>>>>>> Stashed changes
+                                            <label for="file">Select RC Book</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-<<<<<<< Updated upstream
-                                            <label>Select Insurance File</label>
-                                            <input type='file'  name="insurance" accept=".png, .jpg, .jpeg" />
+                                        <label>Insurance File</label>
+                                            <input type='file' id="file"  required name="insurance" accept=".png, .jpg, .jpeg" />
+                                            <label for="file">Select Insurance File</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                        <label>Tax File</label>
+                                            <input type='file' required name="tax" accept=".png, .jpg, .jpeg" />
+                                            <label for="file">Select Tax File</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Insurance Expiry Date</label>
-                                            <input type='date'  name="einsurance" />
-=======
-                                            <input type='file' id="file"  required name="insurance" accept=".png, .jpg, .jpeg" />
-                                            <label for="file" class="btn-2">Select Insurance File</label>
->>>>>>> Stashed changes
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-<<<<<<< Updated upstream
-                                            <label>Select Tax File</label>
-                                            <input type='file'  name="tax" accept=".png, .jpg, .jpeg" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Tax Expiry Date</label>
-                                            <input type='date'  name="etax" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Fitness Image</label>
-                                            <input type='file'  name="fitness" accept=".png, .jpg, .jpeg" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Fitness Expiry Date</label>
-                                            <input type='date'  name="efitness" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>PUC Image</label>
-                                            <input type='file'  name="puc" accept=".png, .jpg, .jpeg" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>PUC Expiry Date</label>
-                                            <input type='date'  name="epuc" />
-=======
-                                            <input type='file' required name="tax" accept=".png, .jpg, .jpeg" />
-                                            <label for="file" class="btn-2">Select Tax File</label>
->>>>>>> Stashed changes
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="">Insurance Expiry Date</label>
                                             <input type='date' required name="tax" accept=".png, .jpg, .jpeg" />
-                                            
+                                            <label for="file">Select Insurance Expiry Date</label>
                                         </div>
                                     </div>
 

@@ -307,32 +307,18 @@ label {
     color: #000000;
 }
 
-@charset "UTF-8";
-[type=file] {
+[type=file],
+[type='date'] {
     height: 0;
     overflow: hidden;
     width: 0;
 }
 
-[type=file]+label {
-    background: #f15d22;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Rubik", sans-serif;
-    font-size: inherit;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    outline: none;
-    padding: 1rem 50px;
+[type=file]+label,
+[type=date]+label {
     position: relative;
     transition: all 0.3s;
-    vertical-align: middle;
-}
-
-[type=file]+label {
+    cursor: pointer;
     background-color: rgb(75 86 135 / 0.1);
     opacity: 1;
     border-radius: 5px;
@@ -344,7 +330,8 @@ label {
     font-size: 14px;
 }
 
-[type=file]+label::before {
+[type=file]+label::before,
+[type=date]+label::before {
     color: #fff;
     content: "";
     font-size: 100%;
@@ -354,6 +341,10 @@ label {
     position: absolute;
     top: 0px;
     transition: all 0.3s;
+}
+
+[type=file]+label::before {
+    background: url(../images/upload-photo.svg) center center / 20px;
 }
 
 [type=file]+label:hover {
