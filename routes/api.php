@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Route::apiresource('/vehicles','App\Http\Controllers\ApiController');
+
+
+
+Route::get('vehicles', 'App\Http\Controllers\ApiController@getAllVehicle');
+Route::get('vehicles/{id}', 'App\Http\Controllers\ApiController@getVehicle');
+Route::post('vehicles', 'App\Http\Controllers\ApiController@createVehicle');
+Route::put('vehicles/{id}', 'App\Http\Controllers\ApiController@updateVehicle');
+Route::delete('vehicles/{id}','App\Http\Controllers\ApiController@deleteVehicle');

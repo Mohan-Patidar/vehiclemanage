@@ -15,6 +15,8 @@ class VehicleController extends Controller
      */
     public function index()
     {    
+
+      
         $vehicle = Vehicle::get();
         return view("admin.vehicle.index",compact("vehicle"));
     }
@@ -44,34 +46,57 @@ class VehicleController extends Controller
             'rcbook'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'insurance'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'tax'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'puc'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'fitness'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            
         ]);
 
 
         $vehicle = new Vehicle;
         $vehicle->name = $request->input('name');
         $vehicle->vehical_no = $request->input('vehical_no');
+        $vehicle->einsurance = $request->input('einsurance');
+        $vehicle->etax = $request->input('etax');
+        $vehicle->epuc = $request->input('epuc');
+        $vehicle->efitness = $request->input('efitness');
+    
 
         if($request->file('rcbook')){
             $profile = $request->file('rcbook');
             $file_name = time() . '.' . $profile->getClientOriginalExtension();
-            $path = public_path('/uploads/rcbook');
+            $path = public_path('../uploads/rcbook');
             $profile->move($path, $file_name);
             $vehicle->rcbook = $file_name;
         }
         if($request->file('insurance')){
             $profile = $request->file('insurance');
             $file_name = time() . '.' . $profile->getClientOriginalExtension();
-            $path = public_path('/uploads/insurance');
+            $path = public_path('../uploads/insurance');
             $profile->move($path, $file_name);
             $vehicle->insurance = $file_name;
         }
         if($request->file('tax')){
             $profile = $request->file('tax');
             $file_name = time() . '.' . $profile->getClientOriginalExtension();
-            $path = public_path('/uploads/tax');
+            $path = public_path('../uploads/tax');
             $profile->move($path, $file_name);
             $vehicle->tax = $file_name;
         }
+        if($request->file('fitness')){
+            $profile = $request->file('fitness');
+            $file_name = time() . '.' . $profile->getClientOriginalExtension();
+            $path = public_path('../uploads/fitness');
+            $profile->move($path, $file_name);
+            $vehicle->fitness = $file_name;
+        }
+        if($request->file('puc')){
+            $profile = $request->file('puc');
+            $file_name = time() . '.' . $profile->getClientOriginalExtension();
+            $path = public_path('../uploads/puc');
+            $profile->move($path, $file_name);
+            $vehicle->puc = $file_name;
+        }
+        
         $vehicle->save();
 
         Session::flash('message-profile', 'Profile image updated successfuly!');
@@ -123,33 +148,54 @@ class VehicleController extends Controller
             'rcbook'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'insurance'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'tax'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'puc'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'fitness'  =>      'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         $vehicle =Vehicle::where("id", "=", $id)->first();
         $vehicle->name = $request->input('name');
         $vehicle->vehical_no = $request->input('vehical_no');
+        $vehicle->einsurance = $request->input('einsurance');
+        $vehicle->etax = $request->input('etax');
+        $vehicle->epuc = $request->input('epuc');
+        $vehicle->efitness = $request->input('efitness');
 
         if($request->file('rcbook')){
             $profile = $request->file('rcbook');
             $file_name = time() . '.' . $profile->getClientOriginalExtension();
-            $path = public_path('/uploads/rcbook');
+            $path = public_path('../uploads/rcbook');
             $profile->move($path, $file_name);
             $vehicle->rcbook = $file_name;
         }
         if($request->file('insurance')){
             $profile = $request->file('insurance');
             $file_name = time() . '.' . $profile->getClientOriginalExtension();
-            $path = public_path('/uploads/insurance');
+            $path = public_path('../uploads/insurance');
             $profile->move($path, $file_name);
             $vehicle->insurance = $file_name;
         }
         if($request->file('tax')){
             $profile = $request->file('tax');
             $file_name = time() . '.' . $profile->getClientOriginalExtension();
-            $path = public_path('/uploads/tax');
+            $path = public_path('../uploads/tax');
             $profile->move($path, $file_name);
             $vehicle->tax = $file_name;
         }
+        if($request->file('fitness')){
+            $profile = $request->file('fitness');
+            $file_name = time() . '.' . $profile->getClientOriginalExtension();
+            $path = public_path('../uploads/fitness');
+            $profile->move($path, $file_name);
+            $vehicle->fitness = $file_name;
+        }
+        if($request->file('puc')){
+            $profile = $request->file('puc');
+            $file_name = time() . '.' . $profile->getClientOriginalExtension();
+            $path = public_path('../uploads/puc');
+            $profile->move($path, $file_name);
+            $vehicle->puc = $file_name;
+        }
+        
         $vehicle->update();
 
         Session::flash('message-profile', 'Vehicle data  updated successfuly!');
@@ -170,4 +216,6 @@ class VehicleController extends Controller
         $id = $request->all();
         Vehicle::destroy($id);
     }
+
+    
 }

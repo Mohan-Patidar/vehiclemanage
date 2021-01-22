@@ -42,19 +42,55 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Select RC Book</label>
-                                            <input type='file' required name="rcbook" accept=".png, .jpg, .jpeg" />
+                                            <input type='file'  name="rcbook" accept=".png, .jpg, .jpeg" />
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Select Insurance File</label>
-                                            <input type='file' required name="insurance" accept=".png, .jpg, .jpeg" />
+                                            <input type='file'  name="insurance" accept=".png, .jpg, .jpeg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Insurance Expiry Date</label>
+                                            <input type='date'  name="einsurance" />
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Select Tax File</label>
-                                            <input type='file' required name="tax" accept=".png, .jpg, .jpeg" />
+                                            <input type='file'  name="tax" accept=".png, .jpg, .jpeg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Tax Expiry Date</label>
+                                            <input type='date'  name="etax" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Fitness Image</label>
+                                            <input type='file'  name="fitness" accept=".png, .jpg, .jpeg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Fitness Expiry Date</label>
+                                            <input type='date'  name="efitness" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>PUC Image</label>
+                                            <input type='file'  name="puc" accept=".png, .jpg, .jpeg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>PUC Expiry Date</label>
+                                            <input type='date'  name="epuc" />
                                         </div>
                                     </div>
                                 </div>

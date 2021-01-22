@@ -17,9 +17,9 @@ class CreateVehiclesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('vehical_no');
-            $table->string("rcbook");
-            $table->string("insurance");
-            $table->string("tax");
+            $table->string("rcbook")->nullable();
+            $table->string("insurance")->nullable();
+            $table->string("tax")->nullable();
             $table->timestamps();
         });
     }
@@ -32,5 +32,6 @@ class CreateVehiclesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('vehicles');
+        
     }
 }

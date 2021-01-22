@@ -25,4 +25,11 @@ class HomeController extends Controller
     {
         return view('vehicles');
     }
+    public function forceDownloadFile()
+    {
+        $filePath = public_path("my_invoice.pdf");
+        $headers = ['Content-Type: application/pdf'];
+        $fileName = time().'.pdf';
+        return response()->download($filePath, $fileName, $headers);
+    }
 }

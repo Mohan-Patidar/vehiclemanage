@@ -59,9 +59,47 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label>Insurance Expiry Date</label>
+                                            <input type='date' required name="einsurance" value="{{$vehicle->einsurance}}"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <label>Select Tax File</label>
                                             <input type='file' required name="tax" accept=".png, .jpg, .jpeg" />
                                             <img src="{{asset('uploads/tax/' .$vehicle ->tax) }}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Tax Expiry Date</label>
+                                            <input type='date' required name="etax" value="{{$vehicle->etax}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Fitness Image</label>
+                                            <input type='file' required name="fitness" accept=".png, .jpg, .jpeg" />
+                                            <img src="{{asset('uploads/fitness/' . $vehicle->fitness)}}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Fitness Expiry Date</label>
+                                            <input type='date' required name="efitness"  value="{{$vehicle->efitness}}"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>PUC Image</label>
+                                            <input type='file' required name="puc" accept=".png, .jpg, .jpeg" />
+                                        </div>
+                                        <img src="{{asset('uploads/puc/' . $vehicle->puc)}}" />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>PUC Expiry Date</label>
+                                            <input type='date' required name="epuc" value="{{$vehicle->epuc}}" />
                                         </div>
                                     </div>
                                 </div>
