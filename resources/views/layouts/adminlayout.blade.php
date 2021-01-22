@@ -37,7 +37,7 @@
         <div class="page-container">
             <div class="page-sidebar">
             <a class="logo-box" href="">
-                <span><img style="width:100%" src="" alt=""></span>
+                <span><img style="width:100%" src="../../assets/images/logo.svg" alt=""></span>
                 <!-- <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i> -->
                 <i class="icon-close" id="sidebar-toggle-button-close"></i>
             </a>

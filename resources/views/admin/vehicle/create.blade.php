@@ -39,14 +39,21 @@
                                             <input type="text" id="vehical_no" placeholder="Vehicle Number" name="vehical_no" class="form-control ">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
+<<<<<<< Updated upstream
                                             <label>Select RC Book</label>
                                             <input type='file'  name="rcbook" accept=".png, .jpg, .jpeg" />
+=======
+                                            <label>Vehicle Number</label>
+                                            <input type='file' required name="rcbook" accept=".png, .jpg, .jpeg" />
+                                            <label for="file" class="btn-2">Select RC Book</label>
+>>>>>>> Stashed changes
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
+<<<<<<< Updated upstream
                                             <label>Select Insurance File</label>
                                             <input type='file'  name="insurance" accept=".png, .jpg, .jpeg" />
                                         </div>
@@ -55,10 +62,15 @@
                                         <div class="form-group">
                                             <label>Insurance Expiry Date</label>
                                             <input type='date'  name="einsurance" />
+=======
+                                            <input type='file' id="file"  required name="insurance" accept=".png, .jpg, .jpeg" />
+                                            <label for="file" class="btn-2">Select Insurance File</label>
+>>>>>>> Stashed changes
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
+<<<<<<< Updated upstream
                                             <label>Select Tax File</label>
                                             <input type='file'  name="tax" accept=".png, .jpg, .jpeg" />
                                         </div>
@@ -91,8 +103,20 @@
                                         <div class="form-group">
                                             <label>PUC Expiry Date</label>
                                             <input type='date'  name="epuc" />
+=======
+                                            <input type='file' required name="tax" accept=".png, .jpg, .jpeg" />
+                                            <label for="file" class="btn-2">Select Tax File</label>
+>>>>>>> Stashed changes
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Insurance Expiry Date</label>
+                                            <input type='date' required name="tax" accept=".png, .jpg, .jpeg" />
+                                            
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <button type="submit" class="cstm-btn margin-top-15">Add Vehicle</button>
                             </form>
